@@ -91,7 +91,7 @@ export default function Header() {
               className="flex items-center group relative h-14 md:h-16 w-auto"
             >
               <img
-                src="/icon.png"
+                src="/ICON.png"
                 alt="Digital Compny Group"
                 className={`h-full w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert drop-shadow-md'
                   }`}
