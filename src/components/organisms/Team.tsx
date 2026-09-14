@@ -49,7 +49,7 @@ export default function Team() {
             <Heading level={2} className="mb-4">
               Kenali <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">Pakar Kami</span>
             </Heading>
-            <Text color="muted" size="lg" className="max-w-2xl mx-auto">
+            <Text color="gray" size="lg" className="max-w-2xl mx-auto">
               Digital Company Group didukung oleh tenaga ahli profesional yang berdedikasi tinggi untuk memberikan solusi teknologi terbaik bagi bisnis Anda.
             </Text>
           </motion.div>
