@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Container, Button } from '../atoms';
-import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { motion, AnimatePresence } from 'framer-motion';
 import ContactModal from './ContactModal';
@@ -91,14 +90,12 @@ export default function Header() {
               onClick={(e) => { e.preventDefault(); scrollToSection('#'); }}
               className="flex items-center group relative h-14 md:h-16 w-auto"
             >
-              <Image 
-              src="/icon.png" 
-              alt="Digital Compny Group" 
-              width={150} 
-              height={40} 
-              className="h-full w-auto object-contain transition-all duration-300"
-              priority
-            />
+              <img
+                src="/ICON.png"
+                alt="Digital Compny Group"
+                className={`h-full w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert drop-shadow-md'
+                  }`}
+              />
             </a>
 
             {/* Desktop Navigation */}
