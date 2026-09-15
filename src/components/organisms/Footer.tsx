@@ -2,6 +2,7 @@
 
 import { Container, Text, Section } from '../atoms';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { 
   MapPinIcon, 
   PhoneIcon, 
@@ -77,11 +78,14 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="mb-6 h-16 md:h-20 w-auto inline-block">
-              <img 
-                src="/ICON.png" 
-                alt="Digital Company Group"
-                className="h-full w-auto object-contain brightness-0 invert drop-shadow-md"
-              />
+              <Image 
+              src="/icon.png" 
+              alt="Digital Compny Group" 
+              width={150} 
+              height={40} 
+              className="h-full w-auto object-contain transition-all duration-300"
+              priority
+            />
             </div>
             <Text color="white" size="base" className="opacity-70 mb-6 max-w-sm leading-relaxed">
               Solusi IT profesional untuk transformasi digital bisnis Anda. Kami berkomitmen memberikan layanan terbaik dengan teknologi terkini.
