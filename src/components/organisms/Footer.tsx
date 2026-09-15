@@ -78,7 +78,7 @@ export default function Footer() {
           >
             <div className="mb-6 h-16 md:h-20 w-auto inline-block">
               <img 
-                src="/icon.png" 
+                src="https://landing-page-digital-compny.vercel.app/ICON.png" 
                 alt="Digital Company Group"
                 className="h-full w-auto object-contain brightness-0 invert drop-shadow-md"
               />
